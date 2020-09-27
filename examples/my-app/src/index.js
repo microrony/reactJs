@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
+const root = document.getElementById('root');
+
 function MyApp() {
   return (
     <ul>
@@ -11,4 +13,4 @@ function MyApp() {
   );
 }
 
-ReactDom.render(<MyApp />, document.getElementById('root'));
+ReactDom.render(<MyApp />, root);
