@@ -8,7 +8,7 @@ class Message extends Component {
     }
   }
 
-  messageChanged() {
+  changedMessage() {
     this.setState({
       message: 'Thanks for subscribing'
     })
@@ -17,11 +17,11 @@ class Message extends Component {
   render() {
     return (
       <div>
-         <h1>{this.state.message}</h1>
-         <button onClick={() => this.messageChanged()}>Subscribe</button>
+        <h1>{this.state.message}</h1>
+        <button onClick={() => this.changedMessage()}>Subscribe</button>
       </div>
     )
   }
 }
 
-export default Message;
+export default Message
