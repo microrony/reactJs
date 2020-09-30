@@ -4,9 +4,13 @@ import C from './components/components';
 function App() {
   return (
     <div className="App">
-      <C name="Rony" />
-      <C name="Sattar" />
-      <C name="Raju" />
+      <C name="Rony" heroName="Goku">
+        <p>This is clildren props</p>
+      </C>
+      <C name="Sattar" heroName="China">
+        <button>Action</button>
+      </C>
+      <C name="Raju" heroName="Manna" />
     </div>
   );
 }
