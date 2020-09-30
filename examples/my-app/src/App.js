@@ -3,14 +3,12 @@ import C from './components/components';
 
 function App() {
   return (
-    <div className="App">
-      <C name="Rony" heroName="Goku">
-        <p>This is clildren props</p>
+    <div>
+      <C name="Rony">
+        <p>This is a children</p>
       </C>
-      <C name="Sattar" heroName="China">
-        <button>Action</button>
-      </C>
-      <C name="Raju" heroName="Manna" />
+      <C name="Sattar"/>
+      <C name="Raju"/>
     </div>
   );
 }
