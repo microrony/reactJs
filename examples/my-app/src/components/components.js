@@ -28,9 +28,12 @@ import React, { Component } from 'react';
 class C extends Component {
   render() {
     return (
+      <div>
       <h1>
         hello, {this.props.name} a.k.a {this.props.heroName}
       </h1>
+      {this.props.children}
+      </div>
     );
   }
 }
