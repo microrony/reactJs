@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // JSX
-const C = props => {
+// const C = props => {
 // return (
 //   <div id="hello" className="dummyClass">
 //     <h1>hello, mahabubur</h1>
@@ -24,27 +24,32 @@ const C = props => {
 //   </div>
 // );
 
-return (
-  <div>
-    <h1>hello, {props.name}</h1>
-    {props.children}
-  </div>
-)
+// return (
+//   <div>
+//     <h1>hello, {props.name}</h1>
+//     {props.children}
+//   </div>
+// )
 
 
-};
+// };
 
-// class C extends Component {
-//   render() {
-//     return (
+class C extends Component {
+  render() {
+    return (
 //       <div>
 //       <h1>
 //         hello, {this.props.name} a.k.a {this.props.heroName}
 //       </h1>
 //       {this.props.children}
 //       </div>
-//     );
-//   }
-// }
+
+      <div>
+        <h1>hello, {this.props.name}</h1>
+        {this.props.children}
+      </div>
+    );
+  }
+}
 
 export default C;
