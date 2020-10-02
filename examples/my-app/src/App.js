@@ -1,11 +1,11 @@
 import React from 'react';
-import C from './components/Components';
-import Message from './components/Message'
+import './App.css';
+import Counter from './components/Counter'
 
 function App() {
   return (
-    <div>
-      
+    <div className = 'App'>
+      <Counter />
     </div>
   );
 }
