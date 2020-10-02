@@ -11,13 +11,16 @@ class Counter extends Component {
   
 
   increment() {
-    this.setState({
-      count: this.state.count + 1
-    },
-    () => {
-      console.log('callback value', this.state.count)
-    })
-    console.log(this.state.count)
+    // this.setState({
+    //   count: this.state.count + 1
+    // },
+    // () => {
+    //   console.log('callback value', this.state.count)
+    // })
+    // console.log(this.state.count)
+    this.setState(prevState => ({
+      count: prevState.count + 1
+    }))
   }
 
   incrementFive () {
