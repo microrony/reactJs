@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Counter from './components/Counter'
+import Welcome from './components/Welcome'
 
 function App() {
   return (
     <div className = 'App'>
-      <Counter />
+      <Welcome name="Rony" heroName="Goku"></Welcome>
     </div>
   );
 }
