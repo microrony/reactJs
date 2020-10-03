@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Greet from './components/Greet'
+import FunctionClick from './components/FunctionClick'
 
 function App() {
   return (
     <div className = 'App'>
-      <Greet name="Rony" heroName="Goku"></Greet>
+      <FunctionClick />
     </div>
   );
 }
