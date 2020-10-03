@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import ClassClick from './components/ClassClick'
+import FunctionClick from './components/FunctionClick'
 
 function App() {
   return (
     <div className = 'App'>
-      <ClassClick />
+      <FunctionClick />
     </div>
   );
 }
