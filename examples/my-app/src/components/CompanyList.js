@@ -16,7 +16,6 @@ function CompanyList() {
   ];
   
   const CompanyList = companies.map(company => <Company company={company} />)
-  console.log(CompanyList);
 
   return <div>{CompanyList}</div>
 }
