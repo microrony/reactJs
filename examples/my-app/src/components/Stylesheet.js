@@ -1,8 +1,8 @@
-import React from 'react';
-import './myStyles.css';
+import React from 'react'
+import './myStyles.css'
 
 function Stylesheet(props) {
-  let className = props.primary ? 'primary' : '';
+  let className = props.primary ? 'primary' : ''
   return (
     <div>
       <h2 className={`${className} font-xl`}>Stylesheet</h2>
@@ -10,4 +10,4 @@ function Stylesheet(props) {
   )
 }
 
-export default Stylesheet;
+export default Stylesheet
