@@ -12,4 +12,4 @@ function Inline() {
   )
 }
 
-export default Inline
+export default Inline;
