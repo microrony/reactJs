@@ -12,27 +12,32 @@ export class Form extends Component {
     }
   }
 
-  handleUsernameChange = (event) => {
+  handleUsernameChange = event => {
     this.setState({
       username: event.target.value
     })
   }
 
-  handleCommentsChange = (event) => {
+  handleCommentsChange = event => {
     this.setState({
       comments: event.target.value
     })
   }
 
-  handleTopicChange = (event) => {
+  handleTopicChange = event => {
     this.setState({
       topic: event.target.value
     })
   }
 
+  handleSubmit = event => {
+    alert(`${this.state.username}`)
+    event.preventDefault()
+  }
+
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
       <div>
         <label>Username</label>
         <input type= 'text' value={this.state.username} onChange={this.handleUsernameChange}/>
@@ -44,11 +49,12 @@ export class Form extends Component {
       <div>
         <label>Topic</label>
         <select value={this.state.topic} onChange={this.handleTopicChange}>
-        <option value='react'>React</option>
-        <option value='angular'>Angular</option>
-        <option value='vue'>Vue</option>
+          <option value='react'>React</option>
+          <option value='angular'>Angular</option>
+          <option value='vue'>Vue</option>
         </select>
       </div>
+      <button type='submit'>Submit</button>
       </form>
     )
   }
