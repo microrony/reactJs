@@ -1,13 +1,13 @@
-import React from 'react';
-import './App.css';
-import LifecycleA from './components/LifecycleA';
+import React from 'react'
+import './App.css'
+import FragmentDemo from './components/FragmentDemo'
 
 function App() {
   return (
     <div className="App">
-      <LifecycleA />
+      <FragmentDemo />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
