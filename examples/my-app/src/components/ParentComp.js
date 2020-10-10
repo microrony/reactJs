@@ -14,7 +14,7 @@ class ParentComp extends Component {
   componentDidMount() {
     setInterval(() => {
       this.setState({
-        name: 'Mahabubur',
+        name: 2,
       })
     }, 2000)
   }
