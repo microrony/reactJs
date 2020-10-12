@@ -8,7 +8,11 @@ function App() {
     <div className="App">
       <ErrorBoundary>
         <Hero heroName="Batman" />
+      </ErrorBoundary>
+      <ErrorBoundary>
         <Hero heroName="Super Man" />
+      </ErrorBoundary>
+      <ErrorBoundary>
         <Hero heroName="Joker" />
       </ErrorBoundary>
     </div>
