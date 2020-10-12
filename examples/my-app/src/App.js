@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.css'
-import FRPerent from './components/FRPerent'
+import PortalDemo from './components/PortalDemo'
 
 function App() {
   return (
     <div className="App">
-      <FRPerent />
+      <PortalDemo />
     </div>
   )
 }
