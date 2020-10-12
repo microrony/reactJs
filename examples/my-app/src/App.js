@@ -7,10 +7,7 @@ function App() {
   return (
     <div className="App">
       <ErrorBoundary>
-        <Hero heroName="Batman" />
-      </ErrorBoundary>
-      <ErrorBoundary>
-        <Hero heroName="Super Man" />
+        <Hero heroName="Superman" />
       </ErrorBoundary>
       <ErrorBoundary>
         <Hero heroName="Joker" />
