@@ -1,17 +1,11 @@
 import React from 'react'
 import './App.css'
-import Hero from './components/Hero'
-import ErrorBoundary from './components/ErrorBoundary'
+import ClickCounter from './components/ClickCounter'
 
 function App() {
   return (
     <div className="App">
-      <ErrorBoundary>
-        <Hero heroName="Superman" />
-      </ErrorBoundary>
-      <ErrorBoundary>
-        <Hero heroName="Joker" />
-      </ErrorBoundary>
+      <ClickCounter />
     </div>
   )
 }
