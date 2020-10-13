@@ -7,16 +7,16 @@ import CounterTwo from './components/CounterTwo'
 function App() {
   return (
     <div className="App">
-      <CounterTwo>
-        {(count, incrementCount) => (
+      <CounterTwo
+        render={(count, incrementCount) => (
           <ClickCounterTwo count={count} incrementCount={incrementCount} />
         )}
-      </CounterTwo>
-      <CounterTwo>
-        {(count, incrementCount) => (
+      />
+      <CounterTwo
+        render={(count, incrementCount) => (
           <HoverCounterTwo count={count} incrementCount={incrementCount} />
         )}
-      </CounterTwo>
+      />
     </div>
   )
 }

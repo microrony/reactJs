@@ -16,9 +16,7 @@ class CounterTwo extends Component {
   }
 
   render() {
-    return (
-      <div>{this.props.children(this.state.count, this.incrementCount)}</div>
-    )
+    return <div>{this.props.render(this.state.count, this.incrementCount)}</div>
   }
 }
 
