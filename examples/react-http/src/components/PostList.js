@@ -7,32 +7,24 @@ class PostList extends Component {
 
     this.state = {
       posts: [],
-      errorMsg: [],
     };
   }
 
   componentDidMount() {
     axios
-      .get('https://jsonplaceholder.typicode.com/posts1')
-      .then(response => {
-        console.log(response);
-        this.setState({ posts: response.data });
-      })
-      .catch(error => {
-        console.log(error);
-        this.setState({ errorMsg: 'Error' });
-      });
+      .get('https://jsonplaceholder.typicode.com/posts')
+      .then(response => this.setState({ posts: response.data }))
+      .catch(error => console.log(error));
   }
 
   render() {
-    const { posts, errorMsg } = this.state;
+    const { posts } = this.state;
     return (
       <div>
         List of posts
         {posts.length
           ? posts.map(post => <div key={post.id}>{post.title}</div>)
           : null}
-        {errorMsg ? <div>{errorMsg}</div> : null}
       </div>
     );
   }
