@@ -9,18 +9,15 @@ class ClassCounter extends Component {
     };
   }
 
-  clickHandler = () => {
-    this.setState(prevState => {
-      return { count: prevState.count + 1 };
-    });
+  incrementCount = () => {
+    this.setState({ count: this.state.count + 1 });
   };
 
   render() {
     const { count } = this.state;
     return (
       <div>
-        <h2>{count}</h2>
-        <button onClick={this.clickHandler}>Increase</button>
+        <button onClick={this.incrementCount}>Count {count}</button>
       </div>
     );
   }
