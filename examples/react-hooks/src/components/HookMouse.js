@@ -13,6 +13,11 @@ function HookMouse() {
   useEffect(() => {
     console.log('useEffect Updated');
     window.addEventListener('mousemove', logMousePosition);
+
+    return () => {
+      console.log('CleanUp work');
+      window.removeEventListener('mousemove', logMousePosition);
+    };
   }, []);
 
   return (
