@@ -1,21 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { UserContext, UserNameContext } from '../App';
 
 function ComponentC() {
+  const user = useContext(UserContext);
+  const userName = useContext(UserNameContext);
   return (
-    <UserContext.Consumer>
-      {user => {
-        return (
-          <UserNameContext.Consumer>
-            {userName => (
-              <h2>
-                Name is {user} and username is {userName}
-              </h2>
-            )}
-          </UserNameContext.Consumer>
-        );
-      }}
-    </UserContext.Consumer>
+    <h2>
+      Name is {user} and username is {userName}
+    </h2>
   );
 }
 
