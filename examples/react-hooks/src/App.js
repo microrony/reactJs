@@ -8,7 +8,7 @@ export const UserNameContext = React.createContext();
 function App() {
   return (
     <div className="App">
-      <CounterOne.js />
+      <CounterOne />
     </div>
   );
 }
