@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react';
 
-const initialValue = 0;
+const initialState = 0;
 
 const reducer = (state, action) => {
   switch (action) {
@@ -9,14 +9,14 @@ const reducer = (state, action) => {
     case 'decrement':
       return state - 1;
     case 'reset':
-      return initialValue;
+      return initialState;
     default:
       return state;
   }
 };
 
 function CounterOne() {
-  const [count, dispatch] = useReducer(reducer, initialValue);
+  const [count, dispatch] = useReducer(reducer, initialState);
 
   return (
     <div>
