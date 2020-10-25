@@ -19,7 +19,7 @@ function DataFatchingOne() {
         setPost({})
         setError('Something went wrong!')
       })
-  })
+  }, [])
 
   return (
     <div>
