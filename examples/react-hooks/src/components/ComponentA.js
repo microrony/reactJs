@@ -2,13 +2,13 @@ import React, {useContext} from 'react'
 import {CountContex} from '../App'
 
 function ComponentA() {
-  const countContex = useContext(CountContex)
+  const {countState, countDispatch} = useContext(CountContex)
   return (
     <div>
-      Component A
-      <button onClick={() => countContex.countDispatch('increment')}>Increment</button>
-      <button onClick={() => countContex.countDispatch('decrement')}>decrement</button>
-      <button onClick={() => countContex.countDispatch('reset')}>Reset</button>
+      Component A - {countState}
+      <button onClick={() => countDispatch('increment')}>Increment</button>
+      <button onClick={() => countDispatch('decrement')}>decrement</button>
+      <button onClick={() => countDispatch('reset')}>Reset</button>
     </div>
   );
 }
