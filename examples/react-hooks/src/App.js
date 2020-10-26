@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import DataFatchingOne from './components/DataFatchingOne';
+import DataFatchingTwo from './components/DataFatchingTwo';
 
 function App() {
   return (
     <div className="App">
-      <DataFatchingOne />
+      <DataFatchingTwo />
     </div>
   );
 }
