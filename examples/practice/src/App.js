@@ -1,8 +1,9 @@
+import ClassCounter from './componenets/ClassCounter'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      
+    <div className='app'>
+      <ClassCounter />
     </div>
   );
 }
