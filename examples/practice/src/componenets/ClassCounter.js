@@ -1,25 +1,24 @@
-import { Component } from 'react'
+import {Component} from 'react'
 
 class ClassCounter extends Component {
+
   constructor(props) {
     super(props);
 
     this.state = {
-      count: 0,
-    };
+      count: 0
+    }
   }
 
   clickHandler = () => {
-    this.setState({
-      count: this.state.count + 1
-    })
+    this.setState({ count: this.state.count + 1 })
   }
 
   render() {
     const {count} = this.state
     return (
       <div>
-        <button onClick={this.clickHandler}>Count {count}</button>{' '}
+        <button onClick={this.clickHandler}>Count {count}</button>
       </div>
     )
   }

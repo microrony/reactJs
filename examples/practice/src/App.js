@@ -1,9 +1,9 @@
-import ClassCounter from './componenets/ClassCounter'
+import HookCounter from './componenets/HookCounter'
 
 const App = () => {
   return (
     <div className='app'>
-      <ClassCounter />
+      <HookCounter />
     </div>
   );
 }
