@@ -1,9 +1,9 @@
-import HookCounter from './componenets/HookCounter'
+import Map from './components/Map'
 
-const App = () => {
+function App() {
   return (
-    <div className='app'>
-      <HookCounter />
+    <div>
+     <Map />
     </div>
   );
 }
